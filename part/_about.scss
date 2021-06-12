@@ -1,0 +1,46 @@
+.about {
+    @include section (512px);
+
+    @include fon('images/about.jpeg', to left, #F4F2F2);
+
+
+    &_text {
+        width: 40%;
+        text-align: center;
+
+        @include ipad {
+            width: 90%;
+        }
+
+        @include tablet {
+            width: 90%;
+        }
+
+        .shef {
+            margin: 20px 20px 0 90px;
+        }
+
+        p {
+            margin-top: 15px;
+            font-family: $font2;
+            font-size: 16px;
+            line-height: 28px;
+            color: $grey;
+        }
+    }
+
+    .about_img {
+        @include ipad {
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+
+        }
+
+        @include phone {
+            display: none;
+        }
+    }
+}

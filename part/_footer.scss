@@ -1,0 +1,52 @@
+.footer {
+    @include section(256px);
+    min-height: 375px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: $white;
+
+    .container {
+        @include ipad {
+            flex-direction: row;
+            align-items: flex-start;
+
+            @include tablet {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @include phone {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+
+    &_item {
+        width: 30%;
+        text-align: center;
+
+        @include ipad {}
+
+        @include tablet {
+            width: 90%;
+        }
+
+        @include phone {
+            width: 90%;
+        }
+
+        p {
+            font-family: $font2;
+            font-size: 16px;
+            line-height: 28px;
+
+        }
+
+        .pau {
+            margin-top: 40px;
+        }
+    }
+
+
+}

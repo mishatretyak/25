@@ -1,0 +1,56 @@
+.reviews {
+    @include section(512px);
+    background-image: url(/build/images/bg2.jpeg);
+    min-height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+    &_text {
+        width: 850px;
+        min-height: 550px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.8);
+
+        @include tablet {
+            width: 90%;
+        }
+
+        @include phone {
+            width: 90%;
+        }
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+
+
+    p {
+        width: 70%;
+        margin: auto;
+        font-family: $font;
+        color: $white;
+        font-style: 24px;
+        line-height: 41px;
+
+
+    }
+
+    span {
+        display: block;
+        padding-top: 50px;
+        font-family: $font2;
+        font-size: 20px;
+        color: $white;
+
+        @include phone {
+            padding-top: 10px;
+        }
+
+    }
+
+
+}

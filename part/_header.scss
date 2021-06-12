@@ -1,0 +1,44 @@
+.header {
+    @include section(512px);
+    background-image: url(/build/images/header.jpeg);
+    min-height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    text-align: center;
+
+    &_menu {
+        width: 40%;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+
+        @include ipad {
+            width: 60%;
+        }
+
+        @include tablet {
+            width: 80%;
+        }
+
+        @include phone {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    }
+
+    button {
+        width: 218px;
+        height: 80px;
+        background-color: rgba(255, 255, 255, 0.6);
+        color: $white;
+        border: none;
+        text-align: center;
+        margin: 20px;
+
+
+    }
+}

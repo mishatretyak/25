@@ -1,0 +1,30 @@
+@mixin section($height) {
+    padding: 100px 0;
+    min-height: $height;
+
+}
+
+@mixin tablet {
+    @media screen and (max-width:768px) {
+        @content;
+    }
+}
+
+@mixin ipad {
+    @media screen and (max-width:960px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media screen and (max-width:520px) {
+        @content;
+    }
+}
+
+@mixin fon($bg, $bg2, $bg3) {
+    background-image: linear-gradient($bg2, $bg3, $white),
+        url($bg);
+    background-blend-mode: hard-light;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.10);
+}

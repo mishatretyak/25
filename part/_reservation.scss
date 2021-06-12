@@ -1,0 +1,120 @@
+.reservation {
+    @include section(512px);
+    min-height: 750px;
+    @include fon('images/about.jpeg', to left, #F4F2F2);
+
+
+
+    &_img {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 95%;
+        }
+
+        @include ipad {
+            width: 80%;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        @include tablet {
+            display: none;
+        }
+
+        @include phone {
+            display: none;
+        }
+
+    }
+
+    &_text {
+        width: 40%;
+        text-align: center;
+
+        @include ipad {
+            width: 80%;
+        }
+
+        @include tablet {
+            width: 90%;
+        }
+
+        @include phone {
+            width: 90%;
+        }
+
+        p {
+            font-family: $font2;
+            font-size: 16px;
+            line-height: 28px;
+            margin: 20px 0 20px 0;
+        }
+    }
+
+    .reservation_form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        text-align: left;
+        margin-bottom: 20px;
+
+        label {
+            font-family: $font2;
+            font-size: 14px;
+            color: $gorchica_l;
+        }
+
+        input {
+            width: 190px;
+            height: 36px;
+            border: solid $grey_l 1px;
+            padding: 5px;
+            font-style: italic;
+
+            @include ipad {
+                width: 290px;
+            }
+
+            @include tablet {
+                width: 190px;
+            }
+
+            @include phone {
+                width: 190px;
+            }
+
+        }
+
+        input:hover {
+            border: solid $gorchica 1px;
+        }
+    }
+
+    .button {
+        margin: auto;
+    }
+
+    button {
+        width: 190px;
+        height: 36px;
+        background-color: $gorchica_l;
+        color: $white;
+        margin-top: 20px;
+        border: none;
+    }
+
+    button:hover {
+        background-color: $grey_l;
+    }
+}

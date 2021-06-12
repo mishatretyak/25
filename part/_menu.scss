@@ -1,0 +1,48 @@
+.menu {
+    @include section(512px);
+
+    @include fon ('images/pattern.png', to right, #F3F1F1);
+
+    &_colum {
+        width: 45%;
+
+        @include ipad {
+            width: 90%;
+        }
+
+        @include tablet {
+            width: 90%;
+        }
+
+        @include phone {
+            width: 90%;
+        }
+    }
+
+    &_items {
+        list-style-type: none;
+
+    }
+
+    &_item {
+        margin: 30px 0 30px 0;
+    }
+
+    &_description {
+        font-family: $font2;
+        font-size: 16px;
+        color: $grey;
+        line-height: 29px;
+    }
+
+    &_title {
+        display: flex;
+        justify-content: space-between;
+        color: $gorchica_l;
+        font-size: 21px;
+        font-family: $font;
+        border-bottom: 1px solid $gorchica_l;
+        line-height: 36px;
+
+    }
+}

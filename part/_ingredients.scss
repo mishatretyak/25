@@ -1,0 +1,58 @@
+.ingredients {
+    @include section(512px);
+    background-image: url(/build/images/bg1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 750px;
+
+    .container {
+
+        justify-content: flex-end;
+
+
+
+    }
+
+    &_text {
+        width: 630px;
+        height: 550px;
+        background-color: rgba(0, 0, 0, 0.80);
+        color: $white;
+        text-align: center;
+
+
+
+        p {
+            width: 68%;
+            margin: auto;
+            font-family: $font2;
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+        .ingredients_img {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            margin: 50px auto;
+
+            .ingredients_item {
+
+                width: 115px;
+                height: 115px;
+                border-radius: 50%;
+                overflow: hidden;
+                border: solid rgba(204, 153, 0, 0.5) 5px;
+
+
+                img {
+                    width: 130%;
+                    height: 130%;
+                    margin: -8px 0px 0px -8px;
+                }
+
+            }
+        }
+    }
+}
